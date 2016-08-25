@@ -1,0 +1,359 @@
+doctype html
+html
+  head
+    include ./_head.jade
+  body
+    include ./_includes/sidebar.jade
+    .ui.two.column.grid.custom
+        .twelve.wide.column
+            h2.ui.header Manage Accounts
+            .ui.top.attached.tabular.menu
+              a.item.active(data-tab='users') Users
+              a.item(data-tab='roles') Roles
+              .right.menu
+                .item
+                  .ui.transparent.icon.input
+                    input(type='text', placeholder='Search...')
+                    i.search.link.icon
+            .ui.bottom.attached.tab.segment.active(data-tab='users')
+              .ui.form
+                .inline.field
+                  label Actions:
+                  select.ui.dropdown(name='actions')
+                    option(value='') Edit
+                    option(value='edit') Edit
+                    option(value='block') Block
+                    option(value='delete') Delete
+                  button.ui.gray.button(type='submit') Apply
+                  button.ui.teal.right.floated.button Add user
+              table.ui.table.selectable
+                thead
+                    tr
+                      th
+                        .ui.checkbox
+                          input(type='checkbox', name='example')
+                      th Name
+                      th Date Joined
+                      th E-mail
+                      th Status
+                      th Actions
+                  tbody
+                  tr
+                    td
+                      .ui.checkbox
+                        input(type='checkbox', name='example') 
+                    td
+                      h4.ui.image.header
+                        img.ui.mini.rounded.image(src='img/lena.png')
+                        .content Jill Lewis
+                          .sub.header Top Manager
+                    td January 11, 2014
+                    td jamieharingonton@yahoo.com
+                    td Active
+                    td 
+                      a(href="#") Edit | 
+                      a(href="#") Delete
+                  tr
+                    td
+                      .ui.checkbox
+                        input(type='checkbox', name='example')
+                    td
+                      h4.ui.image.header
+                        img.ui.mini.rounded.image(src='img/matthew.png')
+                        .content Jamie Harington
+                          .sub.header Cultivation Manager
+                    td May 11, 2014
+                    td jilsewris22@yahoo.com
+                    td Active
+                    td 
+                      a(href="#") Edit | 
+                      a(href="#") Delete
+                  tr
+                    td
+                      .ui.checkbox
+                        input(type='checkbox', name='example')
+                    td
+                      h4.ui.image.header
+                        img.ui.mini.rounded.image(src='img/lindsay.png')
+                        .content John Lilki
+                          .sub.header Area Manager
+                    td September 14, 2013
+                    td jhlilk22@yahoo.com
+                    td Blocked
+                    td 
+                      a(href="#") Edit | 
+                      a(href="#") Delete
+                  tr
+                    td
+                      .ui.checkbox
+                        input(type='checkbox', name='example')
+                    td
+                      h4.ui.image.header
+                        img.ui.mini.rounded.image(src='img/mark.png')
+                        .content John Malkovich
+                          .sub.header Field Officer
+                    td Apri 17, 2014
+                    td malkovich@yahoo.com
+                    td Active
+                    td 
+                      a(href="#") Edit | 
+                      a(href="#") Delete
+                  tr
+                    td
+                      .ui.checkbox
+                        input(type='checkbox', name='example') 
+                    td
+                      h4.ui.image.header
+                        img.ui.mini.rounded.image(src='img/lena.png')
+                        .content Jill Lewis
+                          .sub.header Top Manager
+                    td January 11, 2014
+                    td jamieharingonton@yahoo.com
+                    td Active
+                    td 
+                      a(href="#") Edit | 
+                      a(href="#") Delete
+                  tr
+                    td
+                      .ui.checkbox
+                        input(type='checkbox', name='example')
+                    td
+                      h4.ui.image.header
+                        img.ui.mini.rounded.image(src='img/matthew.png')
+                        .content Jamie Harington
+                          .sub.header Cultivation Manager
+                    td May 11, 2014
+                    td jilsewris22@yahoo.com
+                    td Active
+                    td 
+                      a(href="#") Edit | 
+                      a(href="#") Delete
+                  tr
+                    td
+                      .ui.checkbox
+                        input(type='checkbox', name='example')
+                    td
+                      h4.ui.image.header
+                        img.ui.mini.rounded.image(src='img/lindsay.png')
+                        .content John Lilki
+                          .sub.header Area Manager
+                    td September 14, 2013
+                    td jhlilk22@yahoo.com
+                    td Blocked
+                    td 
+                      a(href="#") Edit | 
+                      a(href="#") Delete
+                  tr
+                    td
+                      .ui.checkbox
+                        input(type='checkbox', name='example')
+                    td
+                      h4.ui.image.header
+                        img.ui.mini.rounded.image(src='img/mark.png')
+                        .content John Malkovich
+                          .sub.header Field Officer
+                    td Apri 17, 2014
+                    td malkovich@yahoo.com
+                    td Active
+                    td 
+                      a(href="#") Edit | 
+                      a(href="#") Delete
+                  tr
+                    td
+                      .ui.checkbox
+                        input(type='checkbox', name='example') 
+                    td
+                      h4.ui.image.header
+                        img.ui.mini.rounded.image(src='img/lena.png')
+                        .content Jill Lewis
+                          .sub.header Top Manager
+                    td January 11, 2014
+                    td jamieharingonton@yahoo.com
+                    td Active
+                    td 
+                      a(href="#") Edit | 
+                      a(href="#") Delete
+                  tr
+                    td
+                      .ui.checkbox
+                        input(type='checkbox', name='example')
+                    td
+                      h4.ui.image.header
+                        img.ui.mini.rounded.image(src='img/matthew.png')
+                        .content Jamie Harington
+                          .sub.header Cultivation Manager
+                    td May 11, 2014
+                    td jilsewris22@yahoo.com
+                    td Active
+                    td 
+                      a(href="#") Edit | 
+                      a(href="#") Delete
+                  tr
+                    td
+                      .ui.checkbox
+                        input(type='checkbox', name='example')
+                    td
+                      h4.ui.image.header
+                        img.ui.mini.rounded.image(src='img/lindsay.png')
+                        .content John Lilki
+                          .sub.header Area Manager
+                    td September 14, 2013
+                    td jhlilk22@yahoo.com
+                    td Blocked
+                    td 
+                      a(href="#") Edit | 
+                      a(href="#") Delete
+                  tr
+                    td
+                      .ui.checkbox
+                        input(type='checkbox', name='example')
+                    td
+                      h4.ui.image.header
+                        img.ui.mini.rounded.image(src='img/mark.png')
+                        .content John Malkovich
+                          .sub.header Field Officer
+                    td Apri 17, 2014
+                    td malkovich@yahoo.com
+                    td Active
+                    td 
+                      a(href="#") Edit | 
+                      a(href="#") Delete
+                  tr
+                    td
+                      .ui.checkbox
+                        input(type='checkbox', name='example')
+                    td
+                      h4.ui.image.header
+                        img.ui.mini.rounded.image(src='img/mark.png')
+                        .content John Malkovich
+                          .sub.header Field Officer
+                    td Apri 17, 2014
+                    td malkovich@yahoo.com
+                    td Active
+                    td 
+                      a(href="#") Edit | 
+                      a(href="#") Delete
+            .ui.bottom.attached.tab.segment(data-tab='roles')
+              .ui.form
+                .inline.field
+                  label Actions:
+                  select.ui.dropdown(name='actions')
+                    option(value='') Delete
+                    option(value='delete') Delete
+                    option(value='desable') Disable
+                  button.ui.gray.button(type='submit') Apply
+                  button.ui.teal.right.floated.button Add role
+              table.ui.table.selectable
+                thead
+                    tr
+                      th
+                        .ui.checkbox
+                          input(type='checkbox', name='example')
+                      th Name
+                      th Code
+                      th Actions
+                  tbody
+                  tr
+                    td 
+                      .ui.checkbox
+                        input(type='checkbox', name='example')
+                    td Top Manger
+                    td TM
+                    td 
+                      a(href="#") Edit | 
+                      a(href="#") Delete
+                  tr
+                    td 
+                      .ui.checkbox
+                        input(type='checkbox', name='example')
+                    td Cultivation Manager
+                    td CM
+                    td 
+                      a(href="#") Edit | 
+                      a(href="#") Delete
+                  tr
+                    td 
+                      .ui.checkbox
+                        input(type='checkbox', name='example')
+                    td Area Manager
+                    td AM
+                    td 
+                      a(href="#") Edit | 
+                      a(href="#") Delete
+                  tr
+                    td 
+                      .ui.checkbox
+                        input(type='checkbox', name='example')
+                    td Field Officer
+                    td FA
+                    td 
+                      a(href="#") Edit | 
+                      a(href="#") Delete
+
+        .four.wide.column
+          .ui.segment
+            h2.ui.header Edit User
+            form.ui.form
+              .field
+                label Login
+                input(type='text', name='first-name', placeholder='John Lilki')
+              .field
+                label Email
+                input(type='email', name='email', placeholder='jhlilk22@yahoo.com')
+              .field
+                label Password
+                input(type='password', name='password', placeholder='', value="123456")
+              .inline.field
+                .ui.checkbox
+                  input.hidden(type='checkbox', tabindex='0')
+                  label Top Manager TO
+              .inline.field
+                .ui.checkbox
+                  input.hidden(type='checkbox', tabindex='0')
+                  label Cultiovation Manager CM
+              .inline.field
+                .ui.checked.checkbox
+                  input.hidden(type='checkbox', tabindex='0', checked="")
+                  label Area Manager AM
+              .inline.field
+                .ui.checkbox
+                  input.hidden(type='checkbox', tabindex='0')
+                  label Field Officer FO
+              .field
+                label Manager comments
+                textarea(rows='3')
+              .ui.segment
+                .inline.field
+                  .ui.toggle.checkbox
+                    input.hidden(type='checkbox', tabindex='0')
+                    label Activate
+              button.ui.teal.button(type='submit') Save
+              button.ui.black.button(type='submit') Remove
+          .ui.segment
+            h2.ui.header Edit Role
+            form.ui.form
+              .field
+                label Role Name
+                input(type='text', name='first-name', placeholder='Cultivation Manager')
+              .field
+                label Role Code
+                input(type='email', name='email', placeholder='CM')
+              .inline.field
+                .ui.toggle.checkbox
+                  input.hidden(type='checkbox', tabindex='0')
+                  label Disable
+              button.ui.teal.button(type='submit') Save
+              button.ui.black.button(type='submit') Remove
+
+
+
+
+
+
+
+
+
+
+
+   
+

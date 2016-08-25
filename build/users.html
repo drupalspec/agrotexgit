@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index page</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="ui left fixed vertical inverted menu"><a href="/" class="teal item">
+        <h4 class="ui grey header">John Doe</h4>
+        <p>Sign Out</p></a><a href="users.html" class="teal item">Accounts
+        <div class="ui label">15</div></a><a href="activities.html" class="teal item">Activities
+        <div class="ui label">10</div></a><a href="areas.html" class="teal item">Areas
+        <div class="ui label">11</div></a><a href="farms.html" class="teal item">Farms
+        <div class="ui label">22</div></a><a href="fields.html" class="teal item">Fields
+        <div class="ui label">32</div></a></div>
+    <div class="ui two column grid custom">
+      <div class="twelve wide column">
+        <h2 class="ui header">Manage Accounts</h2>
+        <div class="ui top attached tabular menu"><a data-tab="users" class="item active">Users</a><a data-tab="roles" class="item">Roles</a>
+          <div class="right menu">
+            <div class="item">
+              <div class="ui transparent icon input">
+                <input type="text" placeholder="Search..."><i class="search link icon"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-tab="users" class="ui bottom attached tab segment active">
+          <div class="ui form">
+            <div class="inline field">
+              <label>Actions:</label>
+              <select name="actions" class="ui dropdown">
+                <option value="">Edit</option>
+                <option value="edit">Edit</option>
+                <option value="block">Block</option>
+                <option value="delete">Delete</option>
+              </select>
+              <button type="submit" class="ui gray button">Apply</button>
+              <button class="ui teal right floated button">Add user</button>
+            </div>
+          </div>
+          <table class="ui table selectable">
+            <thead>
+              <tr>
+                <th>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                  </div>
+                </th>
+                <th>Name</th>
+                <th>Date Joined</th>
+                <th>E-mail</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                  </div>
+                </td>
+                <td>
+                  <h4 class="ui image header"><img src="img/lena.png" class="ui mini rounded image">
+                    <div class="content">Jill Lewis
+                      <div class="sub header">Top Manager</div>
+                    </div>
+                  </h4>
+                </td>
+                <td>January 11, 2014</td>
+                <td>jamieharingonton@yahoo.com</td>
+                <td>Active</td>
+                <td><a href="#">Edit | </a><a href="#">Delete</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                  </div>
+                </td>
+                <td>
+                  <h4 class="ui image header"><img src="img/matthew.png" class="ui mini rounded image">
+                    <div class="content">Jamie Harington
+                      <div class="sub header">Cultivation Manager</div>
+                    </div>
+                  </h4>
+                </td>
+                <td>May 11, 2014</td>
+                <td>jilsewris22@yahoo.com</td>
+                <td>Active</td>
+                <td><a href="#">Edit | </a><a href="#">Delete</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                  </div>
+                </td>
+                <td>
+                  <h4 class="ui image header"><img src="img/lindsay.png" class="ui mini rounded image">
+                    <div class="content">John Lilki
+                      <div class="sub header">Area Manager</div>
+                    </div>
+                  </h4>
+                </td>
+                <td>September 14, 2013</td>
+                <td>jhlilk22@yahoo.com</td>
+                <td>Blocked</td>
+                <td><a href="#">Edit | </a><a href="#">Delete</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                  </div>
+                </td>
+                <td>
+                  <h4 class="ui image header"><img src="img/mark.png" class="ui mini rounded image">
+                    <div class="content">John Malkovich
+                      <div class="sub header">Field Officer</div>
+                    </div>
+                  </h4>
+                </td>
+                <td>Apri 17, 2014</td>
+                <td>malkovich@yahoo.com</td>
+                <td>Active</td>
+                <td><a href="#">Edit | </a><a href="#">Delete</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                  </div>
+                </td>
+                <td>
+                  <h4 class="ui image header"><img src="img/lena.png" class="ui mini rounded image">
+                    <div class="content">Jill Lewis
+                      <div class="sub header">Top Manager</div>
+                    </div>
+                  </h4>
+                </td>
+                <td>January 11, 2014</td>
+                <td>jamieharingonton@yahoo.com</td>
+                <td>Active</td>
+                <td><a href="#">Edit | </a><a href="#">Delete</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                  </div>
+                </td>
+                <td>
+                  <h4 class="ui image header"><img src="img/matthew.png" class="ui mini rounded image">
+                    <div class="content">Jamie Harington
+                      <div class="sub header">Cultivation Manager</div>
+                    </div>
+                  </h4>
+                </td>
+                <td>May 11, 2014</td>
+                <td>jilsewris22@yahoo.com</td>
+                <td>Active</td>
+                <td><a href="#">Edit | </a><a href="#">Delete</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                  </div>
+                </td>
+                <td>
+                  <h4 class="ui image header"><img src="img/lindsay.png" class="ui mini rounded image">
+                    <div class="content">John Lilki
+                      <div class="sub header">Area Manager</div>
+                    </div>
+                  </h4>
+                </td>
+                <td>September 14, 2013</td>
+                <td>jhlilk22@yahoo.com</td>
+                <td>Blocked</td>
+                <td><a href="#">Edit | </a><a href="#">Delete</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                  </div>
+                </td>
+                <td>
+                  <h4 class="ui image header"><img src="img/mark.png" class="ui mini rounded image">
+                    <div class="content">John Malkovich
+                      <div class="sub header">Field Officer</div>
+                    </div>
+                  </h4>
+                </td>
+                <td>Apri 17, 2014</td>
+                <td>malkovich@yahoo.com</td>
+                <td>Active</td>
+                <td><a href="#">Edit | </a><a href="#">Delete</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                  </div>
+                </td>
+                <td>
+                  <h4 class="ui image header"><img src="img/lena.png" class="ui mini rounded image">
+                    <div class="content">Jill Lewis
+                      <div class="sub header">Top Manager</div>
+                    </div>
+                  </h4>
+                </td>
+                <td>January 11, 2014</td>
+                <td>jamieharingonton@yahoo.com</td>
+                <td>Active</td>
+                <td><a href="#">Edit | </a><a href="#">Delete</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                  </div>
+                </td>
+                <td>
+                  <h4 class="ui image header"><img src="img/matthew.png" class="ui mini rounded image">
+                    <div class="content">Jamie Harington
+                      <div class="sub header">Cultivation Manager</div>
+                    </div>
+                  </h4>
+                </td>
+                <td>May 11, 2014</td>
+                <td>jilsewris22@yahoo.com</td>
+                <td>Active</td>
+                <td><a href="#">Edit | </a><a href="#">Delete</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                  </div>
+                </td>
+                <td>
+                  <h4 class="ui image header"><img src="img/lindsay.png" class="ui mini rounded image">
+                    <div class="content">John Lilki
+                      <div class="sub header">Area Manager</div>
+                    </div>
+                  </h4>
+                </td>
+                <td>September 14, 2013</td>
+                <td>jhlilk22@yahoo.com</td>
+                <td>Blocked</td>
+                <td><a href="#">Edit | </a><a href="#">Delete</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                  </div>
+                </td>
+                <td>
+                  <h4 class="ui image header"><img src="img/mark.png" class="ui mini rounded image">
+                    <div class="content">John Malkovich
+                      <div class="sub header">Field Officer</div>
+                    </div>
+                  </h4>
+                </td>
+                <td>Apri 17, 2014</td>
+                <td>malkovich@yahoo.com</td>
+                <td>Active</td>
+                <td><a href="#">Edit | </a><a href="#">Delete</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                  </div>
+                </td>
+                <td>
+                  <h4 class="ui image header"><img src="img/mark.png" class="ui mini rounded image">
+                    <div class="content">John Malkovich
+                      <div class="sub header">Field Officer</div>
+                    </div>
+                  </h4>
+                </td>
+                <td>Apri 17, 2014</td>
+                <td>malkovich@yahoo.com</td>
+                <td>Active</td>
+                <td><a href="#">Edit | </a><a href="#">Delete</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div data-tab="roles" class="ui bottom attached tab segment">
+          <div class="ui form">
+            <div class="inline field">
+              <label>Actions:</label>
+              <select name="actions" class="ui dropdown">
+                <option value="">Delete</option>
+                <option value="delete">Delete</option>
+                <option value="desable">Disable</option>
+              </select>
+              <button type="submit" class="ui gray button">Apply</button>
+              <button class="ui teal right floated button">Add role</button>
+            </div>
+          </div>
+          <table class="ui table selectable">
+            <thead>
+              <tr>
+                <th>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                  </div>
+                </th>
+                <th>Name</th>
+                <th>Code</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                  </div>
+                </td>
+                <td>Top Manger</td>
+                <td>TM</td>
+                <td><a href="#">Edit | </a><a href="#">Delete</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                  </div>
+                </td>
+                <td>Cultivation Manager</td>
+                <td>CM</td>
+                <td><a href="#">Edit | </a><a href="#">Delete</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                  </div>
+                </td>
+                <td>Area Manager</td>
+                <td>AM</td>
+                <td><a href="#">Edit | </a><a href="#">Delete</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                  </div>
+                </td>
+                <td>Field Officer</td>
+                <td>FA</td>
+                <td><a href="#">Edit | </a><a href="#">Delete</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="four wide column">
+        <div class="ui segment">
+          <h2 class="ui header">Edit User</h2>
+          <form class="ui form">
+            <div class="field">
+              <label>Login</label>
+              <input type="text" name="first-name" placeholder="John Lilki">
+            </div>
+            <div class="field">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="jhlilk22@yahoo.com">
+            </div>
+            <div class="field">
+              <label>Password</label>
+              <input type="password" name="password" placeholder="" value="123456">
+            </div>
+            <div class="inline field">
+              <div class="ui checkbox">
+                <input type="checkbox" tabindex="0" class="hidden">
+                <label>Top Manager TO</label>
+              </div>
+            </div>
+            <div class="inline field">
+              <div class="ui checkbox">
+                <input type="checkbox" tabindex="0" class="hidden">
+                <label>Cultiovation Manager CM</label>
+              </div>
+            </div>
+            <div class="inline field">
+              <div class="ui checked checkbox">
+                <input type="checkbox" tabindex="0" checked="" class="hidden">
+                <label>Area Manager AM</label>
+              </div>
+            </div>
+            <div class="inline field">
+              <div class="ui checkbox">
+                <input type="checkbox" tabindex="0" class="hidden">
+                <label>Field Officer FO</label>
+              </div>
+            </div>
+            <div class="field">
+              <label>Manager comments</label>
+              <textarea rows="3"></textarea>
+            </div>
+            <div class="ui segment">
+              <div class="inline field">
+                <div class="ui toggle checkbox">
+                  <input type="checkbox" tabindex="0" class="hidden">
+                  <label>Activate</label>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="ui teal button">Save</button>
+            <button type="submit" class="ui black button">Remove</button>
+          </form>
+        </div>
+        <div class="ui segment">
+          <h2 class="ui header">Edit Role</h2>
+          <form class="ui form">
+            <div class="field">
+              <label>Role Name</label>
+              <input type="text" name="first-name" placeholder="Cultivation Manager">
+            </div>
+            <div class="field">
+              <label>Role Code</label>
+              <input type="email" name="email" placeholder="CM">
+            </div>
+            <div class="inline field">
+              <div class="ui toggle checkbox">
+                <input type="checkbox" tabindex="0" class="hidden">
+                <label>Disable</label>
+              </div>
+            </div>
+            <button type="submit" class="ui teal button">Save</button>
+            <button type="submit" class="ui black button">Remove</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

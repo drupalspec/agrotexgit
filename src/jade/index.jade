@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    include ./_head.jade
+  body.login
+    .ui.middle.aligned.center.aligned.grid
+      .column
+        h2.ui.teal.image.header
+          //- img.image(src='assets/images/logo.png')
+          .content Login
+        form.ui.large.form
+          .ui.stacked.segment
+            .field
+              .ui.left.icon.input
+                i.user.icon
+                input(type='text', name='email', placeholder='E-mail address')
+            .field
+              .ui.left.icon.input
+                i.lock.icon
+                input(type='password', name='password', placeholder='Password')
+            .ui.fluid.large.teal.submit.button(onclick="window.location.href = 'users.html'") Login
+          .ui.error.message
+        //- .ui.message
+        //-   | New to us? 
+        //-   a(href='#') Sign Up

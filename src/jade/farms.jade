@@ -1,0 +1,258 @@
+doctype html
+html
+  head
+    include ./_head.jade
+  body
+    include ./_includes/sidebar.jade
+    .ui.two.column.grid.custom
+        .twelve.wide.column
+            h2.ui.header Farms
+            .ui.form
+              .inline.field
+                label Actions:
+                select.ui.dropdown(name='actions')
+                  option(value='') Edit
+                  option(value='edit') Edit
+                  option(value='delete') Delete
+                button.ui.gray.button(type='submit') Apply
+                button.ui.teal.right.floated.button Add Farm
+            
+
+            table.ui.table.selectable
+              thead
+                  tr
+                    th
+                      .ui.checkbox
+                        input(type='checkbox', name='example')
+                    th Name
+                    th Farmers
+                    th Fields
+                    th Total Harvest (kg)
+                    th Actions
+                tbody
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Apple farm
+                  td 765
+                  td 312
+                  td 12 3213
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Orange farm
+                  td 961
+                  td 3214
+                  td 13 321
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Pear farm
+                  td 321
+                  td 452
+                  td 43 212
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Grapefruit farm
+                  td 432
+                  td 211
+                  td 54 432
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Apple farm
+                  td 765
+                  td 312
+                  td 12 3213
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Orange farm
+                  td 961
+                  td 3214
+                  td 13 321
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Pear farm
+                  td 321
+                  td 452
+                  td 43 212
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Grapefruit farm
+                  td 432
+                  td 211
+                  td 54 432
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Apple farm
+                  td 765
+                  td 312
+                  td 12 3213
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Orange farm
+                  td 961
+                  td 3214
+                  td 13 321
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Pear farm
+                  td 321
+                  td 452
+                  td 43 212
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Grapefruit farm
+                  td 432
+                  td 211
+                  td 54 432
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Apple farm
+                  td 765
+                  td 312
+                  td 12 3213
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Orange farm
+                  td 961
+                  td 3214
+                  td 13 321
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Pear farm
+                  td 321
+                  td 452
+                  td 43 212
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Grapefruit farm
+                  td 432
+                  td 211
+                  td 54 432
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Pear farm
+                  td 321
+                  td 452
+                  td 43 212
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Grapefruit farm
+                  td 432
+                  td 211
+                  td 54 432
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                
+                
+
+
+        .four.wide.column
+            .ui 
+                .ui.segment
+                    h2.ui.header Edit Farm
+                    form.ui.form
+                      .field
+                        label Farm Name
+                        input(type='text', name='first-name', placeholder='Dubai')
+                      .field
+                        label Farmers
+                        input(type='text', name='text', placeholder='412')
+                      .field
+                        label Fields
+                        input(type='text', name='text', placeholder='312')
+                      .field
+                        label Total Harvest (kg)
+                        input(type='text', name='text', placeholder='12 3213')
+
+                      .inline.field
+                        .ui.toggle.checkbox
+                          input.hidden(type='checkbox', tabindex='0')
+                          label Disable
+                      button.ui.teal.button(type='submit') Save
+                      button.ui.black.button(type='submit') Remove

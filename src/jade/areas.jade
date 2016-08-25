@@ -1,0 +1,221 @@
+doctype html
+html
+  head
+    include ./_head.jade
+  body
+    include ./_includes/sidebar.jade
+    .ui.two.column.grid.custom
+        .twelve.wide.column
+            h2.ui.header Areas
+            .ui.form
+              .inline.field
+                label Actions:
+                select.ui.dropdown(name='actions')
+                  option(value='') Delete
+                  option(value='delete') Delete
+                  option(value='desable') Disable
+                button.ui.gray.button(type='submit') Apply
+                button.ui.teal.right.floated.button Add Area
+            
+
+            table.ui.table.selectable
+              thead
+                  tr
+                    th
+                      .ui.checkbox
+                        input(type='checkbox', name='example')
+                    th Name
+                    th Area (km)
+                    th Sample Serial #
+                    th Last Collection
+                    th Actions
+                tbody
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Abu Dhabi
+                  td 2292
+                  td FR2108
+                  td 2015/06
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Dubai
+                  td 3000
+                  td AJ3216
+                  td 2016/05
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Ajman
+                  td 7022
+                  td AE3211
+                  td 2014/08
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Abu Dhabi
+                  td 2292
+                  td FR2108
+                  td 2015/06
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Dubai
+                  td 3000
+                  td AJ3216
+                  td 2016/05
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Ajman
+                  td 7022
+                  td AE3211
+                  td 2014/08
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Abu Dhabi
+                  td 2292
+                  td FR2108
+                  td 2015/06
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Dubai
+                  td 3000
+                  td AJ3216
+                  td 2016/05
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Ajman
+                  td 7022
+                  td AE3211
+                  td 2014/08
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Abu Dhabi
+                  td 2292
+                  td FR2108
+                  td 2015/06
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Dubai
+                  td 3000
+                  td AJ3216
+                  td 2016/05
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Ajman
+                  td 7022
+                  td AE3211
+                  td 2014/08
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Abu Dhabi
+                  td 2292
+                  td FR2108
+                  td 2015/06
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Dubai
+                  td 3000
+                  td AJ3216
+                  td 2016/05
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                tr
+                  td 
+                    .ui.checkbox
+                      input(type='checkbox', name='example')
+                  td Ajman
+                  td 7022
+                  td AE3211
+                  td 2014/08
+                  td 
+                    a(href="#") Edit | 
+                    a(href="#") Delete
+                
+
+
+                
+        .four.wide.column
+            .ui 
+                .ui.segment
+                    h2.ui.header Edit Area
+                    form.ui.form
+                      .field
+                        label Area Name
+                        input(type='text', name='first-name', placeholder='Dubai')
+                      .field
+                        label Area km
+                        input(type='text', name='text', placeholder='3000')
+                      .field
+                        label Last Collection
+                        input(type='text', name='text', placeholder='2015/06')
+                      .inline.field
+                        .ui.toggle.checkbox
+                          input.hidden(type='checkbox', tabindex='0')
+                          label Disable
+                      button.ui.teal.button(type='submit') Save
+                      button.ui.black.button(type='submit') Remove
